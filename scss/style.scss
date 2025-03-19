@@ -1,0 +1,115 @@
+@import 'variables';
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+    }
+
+}
+
+.btn-secondary {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+        border-color: darken($secondary-color, 10%);
+    }
+
+}
+
+.btn-three {
+    background-color: $three-color;
+    border-color: $three-color;
+
+    &:hover {
+        background-color: darken($three-color, 10%);
+        border-color: darken($three-color, 10%);
+    }
+
+}
+
+.btn-four {
+    background-color: $four-color;
+    border-color: $four-color;
+
+    &:hover {
+        background-color: darken($four-color, 10%);
+        border-color: darken($four-color, 10%);
+    }
+
+}
+
+.btn-white {
+    background-color: $white-color;
+    border-color: $white-color;
+
+    &:hover {
+        background-color: darken($white-color, 10%);
+        border-color: darken($white-color, 10%);
+    }
+
+}
+
+.btn-black {
+    background-color: $white-color;
+    border-color: $white-color;
+
+    &:hover {
+        background-color: darken($white-color, 10%);
+        border-color: darken($white-color, 10%);
+    }
+
+}
+
+.text-color-white {
+    color: $white-color;
+
+}
+
+.carousel-item .btn-overlay {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 140px;
+    font-size: 18px;
+}
+
+.img-size {
+    width: auto; /* Define um tamanho fixo para as imagens */
+    height: 150px; /* Garante que todas tenham o mesmo tamanho */
+    object-fit: cover; /* Mantém a proporção e preenche o espaço */
+    display: block; /* Remove espaços extras */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+@media (max-width: 1024px) {
+    .carousel-item .btn-overlay {
+        padding: 20px 100px;
+        font-size: 16px;
+        top: 75%;
+    }
+}
+
+/* Ajuste para telas pequenas (Celulares, 480px - 767px) */
+@media (max-width: 767px) {
+    .carousel-item .btn-overlay {
+        padding: 15px 60px;
+        font-size: 14px;
+        top: 80%;
+    }
+}
+
+/* Ajuste para telas muito pequenas (Celulares compactos, até 480px) */
+@media (max-width: 480px) {
+    .carousel-item .btn-overlay {
+        padding: 10px 40px;
+        font-size: 12px;
+        top: 85%;
+    }
+}
